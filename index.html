@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+   <header class="navbar">
+    <div class="logo">MyDesign</div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+   </header>
+   <section class="hero">
+    <div class="hero-content">
+        <h1>Designing the <span class="highlight">Vision</span>, Coding the Reality.</h1>
+        <p>I am Khyati, a Graphic Designer & Full-Stack Devloper based in UK.</p>
+        <div class="hero-buttons">
+            <button class="btn-primary">View My Work</button>
+            <button class="btn-secondary">Contact Me</button>
+
+        </div>
+    </div>
+   </section>
+   <section class="services">
+    <h2>My Services</h2>
+    <div class="services-container">
+        <div class="services-card">
+            <div class="icone"><i class="fa-solid fa-palette"></i></div>
+            <h3>Graphic Design</h3>
+            <p>Branding, Logo, and social media assets with a professional touch.</p>
+        </div>
+         <div class="services-card">
+            <div class="icone"><i class="fa-solid fa-code"></i></div>
+            <h3>Web Development</h3>
+            <p>Clean, responsive, and high-performances websites using modern code.</p>
+        </div>
+         <div class="services-card">
+            <div class="icone"><i class="fa-solid fa-cloud-bolt"></i></div>
+            <h3>AI & Cloud</h3>
+            <p>Integrating AI solutions and deploying apps to the Cloud (AWS/Vercel).</p>
+        </div>
+    </div>
+   </section>
+   <section class="about" id="about">
+    <div class="about-container">
+        <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=500&q=80" alt="Khyati Profile">
+        </div>
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>I am a creative **Graphic Designer** and an aspiring **Full-Stack Devloper** based in the UK. I love turning complex problems into beautiful, simple, and intuitive designs. </p>
+            <p>With the background in design, I bring a unique perspective to coding-ensuring that every project is not just functional , but also visually stunning.</p>
+            <a href="khyati_CV.pdf" class="btn-primary">Download CV</a>
+        </div>
+    </div>
+   </section>
+   <section class="contact" id="Contact">
+    <h2>Get In Touch</h2>
+    <div class="contact-container">
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5"></textarea>
+            <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+    </div>
+  <button id="theme-toggle">Dark Mode Button</button>
+   </section>
+   <footer>
+    <p>&copy; 2026 Khyati | Designed & Coding with ❤️</p>
+   </footer>
+   
+</body>
+<script src="script.js"></script>
+</html>

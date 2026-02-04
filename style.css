@@ -153,9 +153,10 @@ body{
 .services-card p{
     color: #112e42;
 }
+
 .about{
     padding: 100px 10%;
-    background-color: white;
+    background-color: var(--bg-color);
 }
 .about-container{
     display: flex;
@@ -164,11 +165,14 @@ body{
     gap: 60px;
     flex-wrap: wrap;   /*taki mobile per ek ke niche ek aa jaye*/
 }
-.about-imgage img{
+.about-image img{
     width: 100%;
-    max-width: 380px;
-    border-radius: 25px;  /*Designer Touch: blue shadow for depth*/
-    box-shadow: 20px 20px 0px rgba(52,152,219,0.2);
+    max-width: 350px;
+    border-radius: 20px;  /*Designer Touch: blue shadow for depth*/
+    box-shadow: 0 0 20px var(--main-color);
+    object-fit: cover;
+    height: 350px;
+    aspect-ratio: 1/1;
 }
 .about-text{
     flex: 1;
@@ -177,12 +181,12 @@ body{
 .about-text h2{
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #2c3e50;
+    color: var(--main-color);
 }
 .about-text p{
     font-size: 1.1rem;
     line-height: 1.8;
-    color: #555;
+    color: white;
     margin-bottom: 20px;
 }
 .contact{
@@ -241,15 +245,7 @@ footer{
 
 }
 
-.dark-theme{                                        /*dark mode hone pe puri body ka rang badlna*/
-    background-color: #1a1a1a !important;
-    color: white !important;
-}
-/* Dark mode hone pe cards ko bhi dark karna*/
-.dark-theme .contact-container,.dark-theme form{
-    background-color: #2d2d2d;
-    color: white;
-}
+
 #theme-toggle{
     margin-top: 30px;
     padding: 12px 24px;
